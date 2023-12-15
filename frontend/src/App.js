@@ -7,19 +7,19 @@ export default function App() {
   const [ menu, setMenu ] = useState(false)
   return (
   <div className='window'>
-    <div className='header'>
+    <div className='header container'>
       <div className='container'>
         <div className="header_links">
           <img src={logo} alt="logo"/>
-          <ul className={menu ? "menu_header active" : "menu_header"}>
+          <div className={menu ? "menu_header active_menu" : "menu_header"}>
             <li>Главная</li>
             <li>Технология</li>
             <li>График полетов</li>
             <li>Гарантии</li>
             <li>О компании</li>
             <li>Контакты</li>
-          </ul>
-          <div className={menu ? "header_burger active" : "header_burger"}
+          </div>
+          <div className={menu ? "header_burger active_menu" : "header_burger"}
           onClick={()=>setMenu(!menu)}>
             <span></span>
           </div>

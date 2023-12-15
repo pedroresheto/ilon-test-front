@@ -5,8 +5,9 @@ export default function Advantages() {
 
     useEffect(()=>{
         const fetchData = async function (){
-            const response = await fetch('http://37.228.116.165/api/advantages/?format=json')
-            const data = await response.json()
+           let data = []
+            //const response = await fetch('http://37.228.116.165/api/advantages/?format=json')
+            //const data = await response.json()
             setAdvatages(data)
         }
         fetchData()
